@@ -1,0 +1,37 @@
+{
+  "name": "testdirs-topjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development",
+    "dev-v5": "webpack-dev-server --open --mode development --topjs v5",
+    "dev-v4": "webpack-dev-server --open --mode development --topjs v4",
+    "dev-v3": "webpack-dev-server --open --mode development --topjs v3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangjinha/testdirs-topjs.git"
+  },
+  "keywords": [],
+  "author": "sangjinha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sangjinha/testdirs-topjs/issues"
+  },
+  "homepage": "https://github.com/sangjinha/testdirs-topjs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "fs": "0.0.1-security",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
