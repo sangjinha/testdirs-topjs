@@ -27,6 +27,8 @@ $ ln -s ../../top_v5/src/web/top-framework/react top_v5
 Run webpack-dev-server by the following commands
 ```console
 # v5
+$ npm run dev
+or
 $ npm run dev-v5
 
 # v4
