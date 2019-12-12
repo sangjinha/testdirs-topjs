@@ -6,8 +6,16 @@ console.log('index.js start');
 
 // v5.makeButton();
 const topjs = 'v5';
+const name = 'main';
 
-makeButton('main');
+$.ajax({
+    url: 'index-body.html',
+    type: 'GET',
+}).done(function(data) {
+    $('body').html(data);
+    makeButton(name);
+})
+
 
 function makeButton(name) {
     let button = document.createElement('button');
