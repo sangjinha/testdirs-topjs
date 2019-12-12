@@ -16,7 +16,7 @@ ex. Symbolic link
 # windows
 $ md libs
 $ cd libs
-$ mklink /d ..\..\top_v5\src\web\top-framework\react top_v5
+$ mklink /d top_v5 ..\..\top_v5\src\web\top-framework\react
 
 # linux
 $ mkdir libs
