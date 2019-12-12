@@ -36,8 +36,6 @@ module.exports = (env, options) => {
         config.devtool = 'inline-source-map';
         config.devServer = {
             hot: true, // HMR
-            host: '192.168.13.96', // host
-            // contentBase: './dist', // root path
             stats: {
                 color: true
             },
