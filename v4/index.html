@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../../resources/favicon.ico" />
+    <!-- User CSS -->
+    <link type="text/css" rel="stylesheet" href="./src/index.css">
+
+    <!-- TOP CSS -->
+    <link type="text/css" rel="stylesheet" href="./libs/top_v4/build/css/font.css">
+    <link type="text/css" rel="stylesheet" href="./libs/top_v4/build/css/top.css">
+    <link rel='preload' as='font' href='./libs/top_v4/build/css/fonts/tmaxop.ttf' crossorigin>
+    <link rel='preload' as='font' href='./libs/top_v4/build/css/fonts/NewTmaxGothicRegular.woff' crossorigin>
+
+    <!-- <link rel='prefetch' as='image' href='resources/check.jpg'> -->
+    <!-- <link rel='preload' as='image' href='resource/hold.png'> -->
+
+    <!-- Load React v15. -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script> -->
+
+    <!-- Load React v16. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- classnames -->
+    <script src="https://cdnjs.cloudflare.com/ajax/./libs/classnames/2.2.6/index.min.js"></script>
+
+    <!-- styled-components -->
+    <script src="./libs/top_v4/build/lib/styled-components.js"></script>
+
+    <!-- Load Babel to compile JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script> -->
+    <script src="./libs/top_v4/build/lib/jquery.js"></script>
+    <!-- <script src="./libs/top_v4/build/lib/jquery-3.4.1.js"></script> -->
+
+    <!-- production version -->
+    <!-- <script src="./libs/top_v4/build/min/lib.min.js"></script>
+    <script src="./libs/top_v4/build/min/top-widgets.js"></script> -->
+
+    <!-- development version-->
+    <script src="./libs/top_v4/build/top-core.js"></script>
+    <script src="./libs/top_v4/build/top-layoutEditor.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-widget-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-element-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-control-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-data-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-commonstyle-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-textstyle-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-event-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-container-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-content-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-text-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-input-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-autocomplete-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-check-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-group-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-layout-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-mask-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-menu-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-resource-behavior.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-absolutelayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-accordionlayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-alarmbadge.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-breadcrumb.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-button.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-chip.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-chart.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-codeeditor.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-checkbox.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-colorpicker.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-datepicker.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-flowlayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-framelayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-gridlayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-htmleditor.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-icon.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-imagebutton.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-imageslider.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-imageview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-layout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-linearlayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-listview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-menu.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-page.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-pagination.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-panel.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-progressbar.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-radiobutton.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-selectbox.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-slider.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-spinner.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-splitterlayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-stepper.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-switch.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-tablayout.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-tableview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-textarea.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-textfield.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-textview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-toggle.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-treeview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-videoview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-webview.js"></script>
+    <script src="./libs/top_v4/build/widgets/top-widgetitem.js"></script>
+
+    <!-- libraries -->
+
+    <!-- bxSlider for imageslider -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/./libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/./libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" /> -->
+    <script src="./libs/top_v4/build/lib/jquery.bxslider.js"></script>
+    <!-- <script src="./libs/top_v4/build/lib/bxslider-4-4.2.12/jquery.bxslider.js"></script>
+    <link type="text/css" rel="stylesheet" href="./libs/top_v4/src/lib/bxslider-4-4.2.12/jquery.bxslider.css"> -->
+    <!-- jquery-te for htmleditor -->
+    <script src="./libs/top_v4/build/lib/jquery-te-1.4.0.js"></script>
+    <link type="text/css" rel="stylesheet" href="./libs/top_v4/build/css/jquery-te-1.4.0.css">
+
+    <script src="./libs/top_v4/build/lib/bootstrap.bootpage.js"></script>
+    <script src="./libs/top_v4/build/lib/codemirror-5.30.0/codemirror.js"></script>
+    <script src="./libs/top_v4/build/lib/nouislider.js"></script>
+    <script src="./libs/top_v4/build/lib/jquery.slicknav.js"></script>
+    <script src="./libs/top_v4/build/lib/d3.min.js"></script>
+
+    <script id='top.js' src="./libs/top_v4/build/top-render.js"></script>
+
+    <title>Webpack_v4_test_main</title>
+</head>
+
+<body>
+    <div id='container' class='flex-container'>
+        <header id='header' class='flex-header'>
+            <div class='flex-back-container'>
+                <button class='gnb-button flex-back'>Back</button>
+            </div>
+        </header>
+        <div id='main' class='flex-main'></div>
+    </div>
+
+    <script>
+        console.log("v4_react_test_main Start");
+    </script>
+
+    <script src='dist/app.bundle.js'></script>
+
+</body>
+</html>
