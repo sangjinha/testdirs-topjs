@@ -16,10 +16,12 @@ ex. Symbolic link
 # windows
 $ md libs
 $ cd libs
-$ mklink /d top_v5\src\web\top-framework\react top_v5
+$ mklink /d ..\..\top_v5\src\web\top-framework\react top_v5
 
 # linux
-$ ln -s top_v5/src/web/top-framework/react libs/top_v5
+$ mkdir libs
+$ cd libs
+$ ln -s ../../top_v5/src/web/top-framework/react top_v5
 ```
 ## Commands
 Run webpack-dev-server by the following commands
