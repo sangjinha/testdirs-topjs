@@ -34,6 +34,9 @@ $ npm run dev-v5
 # v4
 $ npm run dev-v4
 
+# v4_min
+$ npm run dev-v4_min
+
 # v3
 $ npm run dev-v3
 ```
