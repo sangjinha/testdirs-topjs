@@ -13,6 +13,7 @@ $.ajax({
     type: 'GET',
 }).done(function(data) {
     $('body').html(data);
+    printInformation(topjs, name);
     makeButton(name);
 })
 
@@ -38,4 +39,9 @@ function makeButton(name) {
     }
 
     document.getElementById('header').appendChild(button);
+}
+
+function printInformation(topjs, name) {
+    document.getElementById('version').innerText = topjs;
+    document.getElementById('name').innerText = name;
 }
