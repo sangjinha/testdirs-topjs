@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open --mode development",
+    "dev": "webpack-dev-server --open --mode development --topjs v5",
     "dev-v5": "webpack-dev-server --open --mode development --topjs v5",
     "dev-v4": "webpack-dev-server --open --mode development --topjs v4",
     "dev-v3": "webpack-dev-server --open --mode development --topjs v3"
