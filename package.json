@@ -10,6 +10,7 @@
     "dev": "webpack-dev-server --open --mode development --topjs v5",
     "dev-v5": "webpack-dev-server --open --mode development --topjs v5",
     "dev-v4": "webpack-dev-server --open --mode development --topjs v4",
+    "dev-v4_min": "webpack-dev-server --open --mode development --topjs v4_min",
     "dev-v3": "webpack-dev-server --open --mode development --topjs v3"
   },
   "repository": {
