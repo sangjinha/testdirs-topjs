@@ -32,7 +32,7 @@ or
 $ npm run dev-v5
 
 # v4
-$ npm run dev-v3
+$ npm run dev-v4
 
 # v3
 $ npm run dev-v3
