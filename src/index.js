@@ -1,6 +1,9 @@
 console.log('index.js start');
+const projectList = [
+    'main', 'test', 'page'
+]
 const topjs = 'v5';
-const name = 'main';
+const name = 'intro';
 
 $.ajax({
     url: 'index-body.html',
@@ -8,9 +11,14 @@ $.ajax({
 }).done(function(data) {
     $('body').append(data);
     printInformation(topjs, name);
-    makeButton(name);
+    makeButtons(name);
 })
 
+function makeButtons() {
+    projectList.forEach(function(name) {
+        makeButton(name);
+    })
+}
 
 function makeButton(name) {
     let button = document.createElement('button');
