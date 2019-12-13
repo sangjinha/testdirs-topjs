@@ -1,10 +1,4 @@
-// import { LibsLoader } from './libs-loader'
 console.log('index.js start');
-
-// const v5 = new LibsLoader('v5');
-// console.log(`${v5.getVersion()} loaded`);
-
-// v5.makeButton();
 const topjs = 'v5';
 const name = 'main';
 
