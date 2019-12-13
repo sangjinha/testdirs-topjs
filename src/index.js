@@ -24,6 +24,7 @@ function makeButton(name) {
             type: 'GET',
         })
         .done(function(data) {
+            printInformation(topjs, name);
             document.getElementById('main').innerHTML = data;
             TopUI.Render.renderDom(document.querySelector('div#layoutEditor'), function() { console.log('render done')});
         })
