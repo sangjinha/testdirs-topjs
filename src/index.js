@@ -2,7 +2,6 @@ console.log('index.js start');
 const projectList = [
     'main', 'test', 'page'
 ]
-const topjs = 'v5';
 const name = 'intro';
 
 $.ajax({
