@@ -6,7 +6,7 @@ $.ajax({
     url: 'index-body.html',
     type: 'GET',
 }).done(function(data) {
-    $('body').html(data);
+    $('body').append(data);
     printInformation(topjs, name);
     makeButton(name);
 })
